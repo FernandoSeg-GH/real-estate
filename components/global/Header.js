@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container">
         <Navbar className="p-0" bg="none" expand="lg">
           <Link className="navbar-brand" href="/">
-            <h2 className="logo">Reala.</h2>
+            <h2 className="logo">CanVai.</h2>
           </Link>
           <Navbar.Toggle
             className="navbar-toggler collapsed"
