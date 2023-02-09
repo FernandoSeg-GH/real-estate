@@ -14,7 +14,7 @@ export default function Home({ property }) {
   const { data } = property;
 
   return (
-    <Layout title='canvai' >
+    <Layout title='CanVai S.L.' >
       <Hero />
       <FeaturedListing data={data} />
       <WhyChooseUs />

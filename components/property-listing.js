@@ -6,11 +6,11 @@ const PropertyListing = ({ data }) => {
   return (
     <div className="featured-list section-padding">
       <div className="container">
-        <SectionTitle title="Property Listing" />
+        <SectionTitle title="Propiedades" />
         <div className="featured-listing__wrapper">
           <div className="row">
             {data === null || undefined || 0 ? (
-              <span className="error">Property not available</span>
+              <span className="error">Propiedad no disponible</span>
             ) : null}
             {data?.slice(0, 6).map((property) => (
               <PropertyCard property={property} key={property.id} />
@@ -21,7 +21,7 @@ const PropertyListing = ({ data }) => {
           ) : (
             <div className="text-center mt-4">
               <Link href="/all-property" className="button-primary">
-                View All Property
+                Mirar todo
               </Link>
             </div>
           )}

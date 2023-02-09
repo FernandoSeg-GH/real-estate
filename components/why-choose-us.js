@@ -1,9 +1,6 @@
 import React from "react";
 import SectionTitle from "./global/section-title";
-import { VscWorkspaceTrusted } from "react-icons/vsc";
-import { MdEngineering } from "react-icons/md";
-import { TbCertificate } from "react-icons/tb";
-import { FiHelpCircle } from "react-icons/fi";
+import { MdOutlineHomeWork, MdOutlineKitchen, MdOutlineBuild, MdOutlineEngineering } from "react-icons/md";
 
 const WhyChooseUs = () => {
   return (
@@ -12,16 +9,16 @@ const WhyChooseUs = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <div className="wChoose__intro">
-              <SectionTitle title="Why Choose Reala" position="left" />
-              <p className="fs-4">keep calm, and reala on.</p>
+              <SectionTitle title="Reformas" position="left" />
+              <p className="fs-5">¿Qué servicios ofrecemos?</p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptatem distinctio illum iure deserunt eum mollitia.
+                Para ofrecer las mejores condiciones, garantías y transparencia, siendo franquiciados <strong>AQUÍ TU REFORMA</strong>, podemos ofrecerte tanto garantía de calidad por 2 años tras finalizadas las obras, como el cumplimiento de plazos por contrato.
               </p>
               <img
-                src="images/wChoose2.jpg"
-                alt="wChoose"
+                src="images/cv3.png"
+                alt="atr"
                 className="img-fluid"
+
               />
             </div>
           </div>
@@ -31,52 +28,44 @@ const WhyChooseUs = () => {
                 <div className="col-lg-6 mb-4">
                   <div className="wChoose__content__item">
                     <div className="icon">
-                      <VscWorkspaceTrusted />
+                      <MdOutlineHomeWork />
                     </div>
-                    <h3>Trusted Company</h3>
+                    <h3>Integrales</h3>
                     <p>
-                      Fusce elementum vulputate ipsum in molestie. Proin
-                      interdum lectu blandit tortor facilisis efficitur
-                      ultricies.
+                      Realizamos reformas integrales, con tu inmueble completamente a estrenar! Esta es tu mejor opción si quieres dejar todo como nuevo.
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6 mb-4">
                   <div className="wChoose__content__item">
                     <div className="icon">
-                      <MdEngineering />
+                      <MdOutlineKitchen />
                     </div>
-                    <h3>Experienced</h3>
+                    <h3>Parciales</h3>
                     <p>
-                      Fusce elementum vulputate ipsum in molestie. Proin
-                      interdum lectu blandit tortor facilisis efficitur
-                      ultricies.
+                      También hacemos reformas parciales. Baños, cocinas o cualquier aspecto puntual de tu inmueble que requiera una refacción.
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6 mb-4">
                   <div className="wChoose__content__item">
                     <div className="icon">
-                      <TbCertificate />
+                      <MdOutlineBuild />
                     </div>
-                    <h3>Certified Worker</h3>
+                    <h3>Construcción</h3>
                     <p>
-                      Fusce elementum vulputate ipsum in molestie. Proin
-                      interdum lectu blandit tortor facilisis efficitur
-                      ultricies.
+                      Realizamos construcciones y obra nueva. ¿Tienes un terreno y quieres construir la casa de tus sueños? ¡Juntos lo hacemos realidad!
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="wChoose__content__item">
                     <div className="icon">
-                      <FiHelpCircle />
+                      <MdOutlineEngineering />
                     </div>
-                    <h3>24/7 Support</h3>
+                    <h3>Experiencia</h3>
                     <p>
-                      Fusce elementum vulputate ipsum in molestie. Proin
-                      interdum lectu blandit tortor facilisis efficitur
-                      ultricies.
+                      Tenemos más de 3 décadas ayudando tanto a familias a construir sus hogares, como a las empresas a alcanzar sus metas.
                     </p>
                   </div>
                 </div>
