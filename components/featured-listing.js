@@ -21,27 +21,27 @@ const FeaturedListing = ({ data }) => {
   return (
     <div className="featured-list section-padding">
       <div className="container">
-        <SectionTitle title="Featured Listing" />
+        <SectionTitle title="Propiedades Destacadas" />
         <div className="featured-listing__wrapper">
           <Tabs
             activeKey={key}
             onSelect={(k) => setKey(k)}
             id="controlled-tab-example-listing"
           >
-            <Tab eventKey="rent" title="Rent">
+            <Tab eventKey="rent" title="Alquiler">
               <div className="row justify-content-center">
                 {data === null || undefined || 0 ? (
-                  <span className="error">property not available for rent</span>
+                  <span className="error">Propiedad no disponible para alquiler</span>
                 ) : null}
                 {propertyRent?.slice(0, 3).map((property) => (
                   <PropertyCard property={property} key={property.id} />
                 ))}
               </div>
             </Tab>
-            <Tab eventKey="sale" title="Sale">
+            <Tab eventKey="sale" title="Venta">
               <div className="row justify-content-center">
                 {data === null || undefined || 0 ? (
-                  <span className="error">property not available for sale</span>
+                  <span className="error">Propiedad no disponible para venta</span>
                 ) : null}
                 {propertySale?.slice(0, 3).map((property) => (
                   <PropertyCard property={property} key={property.id} />

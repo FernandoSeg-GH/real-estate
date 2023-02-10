@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container">
         <Navbar className="p-0" bg="none" expand="lg">
           <Link className="navbar-brand" href="/">
-            <h2 className="logo">Reala.</h2>
+            <h2 className="logo">CanVai</h2>
           </Link>
           <Navbar.Toggle
             className="navbar-toggler collapsed"
@@ -37,24 +37,24 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/all-property">
-                  All Property
+                  Reformas
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/blogs">
-                  Blog
+                  Inmuebles
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/contact">
-                  Contact
+                  Contacto
                 </Link>
               </li>
             </ul>
             <ul className="navbar-nav navbar__right d-block d-lg-none">
               <li className="nav-item">
                 <Link className="nav-link" href="mailto:admin@gmail.com">
-                  <MdOutlineMailOutline /> admin@gmail.com
+                  <MdOutlineMailOutline /> info@gmail.com
                 </Link>
               </li>
               <li className="nav-item">
@@ -69,17 +69,17 @@ const Header = () => {
             <li className="nav-item">
               <Link
                 className="nav-link d-flex gap-2 align-items-center"
-                href="mailto:admin@gmail.com"
+                href="info@can-vai.com"
               >
-                <MdOutlineMailOutline /> admin@gmail.com
+                <MdOutlineMailOutline /> info@can-vai.com
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 className="nav-link d-flex gap-2 align-items-center"
-                href="tel:0123456789"
+                href="tel:624292516"
               >
-                <MdCall /> 0123456789
+                <MdCall /> +34 624292516
               </Link>
             </li>
           </ul>

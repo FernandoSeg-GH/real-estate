@@ -14,7 +14,7 @@ export default function Home({ property }) {
   const { data } = property;
 
   return (
-    <Layout>
+    <Layout title='CanVai S.L.' >
       <Hero />
       <FeaturedListing data={data} />
       <WhyChooseUs />
@@ -27,6 +27,11 @@ export default function Home({ property }) {
 export async function getStaticProps() {
   const res = await fetch(`${API_URL}/api/properties?populate=*`);
   const property = await res.json();
+  if (!property) {
+    console.log("No hay  nada")
+  } else {
+    console.log(property, "Mira acá")
+  }
 
   return {
     props: { property },

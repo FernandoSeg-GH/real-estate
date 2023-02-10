@@ -9,7 +9,7 @@ const Testimonial = () => {
   return (
     <div className="testimonial section-padding section-bg">
       <div className="container">
-        <SectionTitle title="What people said about Reala" />
+        <SectionTitle title="Nosotros" />
         <div className="rwo">
           <div className="col-12">
             <Swiper
@@ -29,18 +29,15 @@ const Testimonial = () => {
                     <div className="user__image">
                       <img
                         className="img-fluid"
-                        src="images/user1.jpg"
+                        src="images/pp.jpg"
                         alt="user 01"
                       />
                     </div>
-                    <h3 className="user__name">Mark Tony</h3>
-                    <p className="user__title">Software Developer</p>
+                    <h3 className="user__name">Pía Pasqualini</h3>
+                    <p className="user__title">Inmobiliario <em>AICAT 11939</em></p>
                   </div>
                   <p className="user__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate consequuntur eius sunt cum laborum harum provident
-                    error animi ipsam modi debitis dignissimos veniam
-                    repudiandae mollitia sed voluptates?
+                    description
                   </p>
                 </div>
               </SwiperSlide>
@@ -50,18 +47,15 @@ const Testimonial = () => {
                     <div className="user__image">
                       <img
                         className="img-fluid"
-                        src="images/user2.jpg"
+                        src="images/mp.jpg"
                         alt="user 02"
                       />
                     </div>
-                    <h3 className="user__name">Jhon Dow</h3>
-                    <p className="user__title">Frontend Developer</p>
+                    <h3 className="user__name">Marcelo Leopoldo Pasqualini</h3>
+                    <p className="user__title">Arquitecto</p>
                   </div>
                   <p className="user__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate consequuntur eius sunt cum laborum harum provident
-                    error animi ipsam modi debitis dignissimos veniam
-                    repudiandae mollitia sed voluptates?
+                    description
                   </p>
                 </div>
               </SwiperSlide>
@@ -71,39 +65,15 @@ const Testimonial = () => {
                     <div className="user__image">
                       <img
                         className="img-fluid"
-                        src="images/user3.jpg"
+                        src="images/mp.jpg"
                         alt="user 02"
                       />
                     </div>
-                    <h3 className="user__name">Lama Dev</h3>
-                    <p className="user__title">Full-stack Developer</p>
+                    <h3 className="user__name">Empleado</h3>
+                    <p className="user__title">Ocupación</p>
                   </div>
                   <p className="user__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate consequuntur eius sunt cum laborum harum provident
-                    error animi ipsam modi debitis dignissimos veniam
-                    repudiandae mollitia sed voluptates?
-                  </p>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="testimonial__item">
-                  <div className="user">
-                    <div className="user__image">
-                      <img
-                        className="img-fluid"
-                        src="images/user4.jpg"
-                        alt="user 02"
-                      />
-                    </div>
-                    <h3 className="user__name">Jorina begum</h3>
-                    <p className="user__title">Book Writer</p>
-                  </div>
-                  <p className="user__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate consequuntur eius sunt cum laborum harum provident
-                    error animi ipsam modi debitis dignissimos veniam
-                    repudiandae mollitia sed voluptates?
+                    description
                   </p>
                 </div>
               </SwiperSlide>

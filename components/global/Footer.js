@@ -1,6 +1,7 @@
 import {
   FaFacebookF,
   FaInstagram,
+  FaLinkedin,
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
@@ -25,10 +26,10 @@ function SubscribeForm({ status, message, onValidated }) {
           ref={(node) => (email = node)}
           type="email"
           required
-          placeholder="Your email"
+          placeholder="Correo electrónico"
         />
         <button className="button-primary" type="submit" onClick={submit}>
-          Subscribe
+          Suscribirse
         </button>
       </div>
 
@@ -59,7 +60,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="footer__top mx-auto">
-            <h3>Join Newsletter</h3>
+            <h3>Unirse al Newsletter</h3>
             <MailchimpSubscribe
               url={MAILCHAIMP}
               render={({ subscribe, status, message }) => (
@@ -75,24 +76,24 @@ const Footer = () => {
         <div className="row footer-padding">
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <div className="footer__logo">
-              <h1>Reala.</h1>
+              <h1>CanVai S.L.</h1>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <div className="footer__content">
-              <h3>Venue Location</h3>
+              <h3>Ubicación</h3>
               <ul>
                 <li>
-                  329 Queensberry Street, North Melbourne VIC 3051, Australia.
+                  Av. Diagonal & c/ de Bilbao, Barcelona 08018
                 </li>
                 <li>
                   <GoLocation />{" "}
                   <a
-                    href="https://www.google.com/maps/place/United+States/@37.2755783,-104.6571311,5z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891"
+                    href="https://www.google.com/maps/place/Avinguda+Diagonal+%26+Carrer+de+Bilbao,+08018+Barcelona/@41.4061994,2.1968254,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a33be71c8e59:0x49f36ffffe315c87!8m2!3d41.4061994!4d2.1990194"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View map location
+                    Ver en Google Maps
                   </a>
                 </li>
               </ul>
@@ -100,8 +101,8 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="footer__social">
-              <h3>Social Connection</h3>
-              <p>You should connect social area for any update</p>
+              <h3>Redes Sociales</h3>
+              <p>¡Síguenos para obtener novedades!</p>
               <ul>
                 <li>
                   <a
@@ -114,16 +115,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.twitter.com"
-                    aria-label="Twitter"
-                    className="icon"
-                  >
-                    <FaTwitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/canvaisl/"
                     aria-label="Instagram"
                     className="icon"
                   >
@@ -132,11 +124,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    aria-label="Whatsapp"
-                    href="tel:+880123456789"
+                    aria-label="LinkedIn"
+                    href="https://www.linkedin.com/company/can-vai-sl/"
                     className="icon"
                   >
-                    <FaWhatsapp />
+                    <FaLinkedin />
                   </a>
                 </li>
               </ul>
