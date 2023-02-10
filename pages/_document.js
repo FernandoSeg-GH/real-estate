@@ -8,7 +8,7 @@ export default function Document() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"/>
+        <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}/>
         <Script
           id='google-analytics'
           strategy="afterInteractive"
@@ -17,7 +17,7 @@ export default function Document() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXX', {
+              gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}', {
                 page_path: window.location.pathname,
               });
             `,
