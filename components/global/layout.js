@@ -21,7 +21,7 @@ export default function Layout({ title, keywords, description, children }) {
 
 Layout.defaultProps = {
   title: "Can-Vai Propiedades",
-  description: "Más de 30 años de trayectoria en el rubro de la construcción, arquitectura y reformas",
+  description: "Arquitectura & Real Estate: generamos soluciones arquitectónicas e inmobiliarias con más de 30 años de trayectoria en el rubro de la construcción, arquitectura y reformas",
   keywords: "real estate, inmobiliaria, propiedades, alquiler, venta, construcción, arquitectura, reformas, can-vai, canvai, canvai propiedades, can-vai propiedades, canvai propiedades, compra venta propiedades, compra venta inmuebles, compra venta departamentos, compra venta casas, compra venta terrenos, compra venta locales comerciales, compra venta oficinas, compra venta galpones, inmobiliaria barcelonaa,",
 };
 
