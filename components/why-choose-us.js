@@ -8,18 +8,15 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div className="wChoose__intro">
-              <SectionTitle title="Reformas" position="left" />
-              <p className="fs-5">¿Qué servicios ofrecemos?</p>
+            <div className="wChoose__intro" style={{textAlign:'justify'}}>
+              <SectionTitle title="Servicios" position="left" />
+              <p className="fs-5">¿Qué te ofrecemos?</p>
               <p>
-                Para ofrecer las mejores condiciones, garantías y transparencia, siendo franquiciados <strong>AQUÍ TU REFORMA</strong>, podemos ofrecerte tanto garantía de calidad por 2 años tras finalizadas las obras, como el cumplimiento de plazos por contrato.
+                Para ofrecer las mejores condiciones, garantías y transparencia, estamos siendo franquiciados por <strong>AQUÍ TU REFORMA</strong>.
               </p>
-              <img
-                src="images/cv3.png"
-                alt="atr"
-                className="img-fluid"
-
-              />
+              <p>
+                Podemos ofrecerte tanto garantía de calidad por 2 años tras finalizadas las obras, como el cumplimiento de plazos por contrato, siempre con profesionalismo y seriedad.
+              </p>
             </div>
           </div>
           <div className="col-lg-8 col-md-6">
@@ -43,7 +40,7 @@ const WhyChooseUs = () => {
                     </div>
                     <h3>Parciales</h3>
                     <p>
-                      También hacemos reformas parciales. Baños, cocinas o cualquier aspecto puntual de tu inmueble que requiera una refacción.
+                      También hacemos reformas parciales. Baños, cocinas o cualquier aspecto puntual de tu inmueble que requiera algún tipo de refacción.
                     </p>
                   </div>
                 </div>

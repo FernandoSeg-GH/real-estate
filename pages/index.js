@@ -5,6 +5,7 @@ import Hero from "../components/hero";
 import FeaturedListing from "../components/featured-listing";
 import WhyChooseUs from "../components/why-choose-us";
 import PropertyListing from "../components/property-listing";
+import Portfolio from "../components/portfolio";
 import Testimonial from "../components/testimonial";
 import { API_URL } from "../config";
 
@@ -20,6 +21,7 @@ export default function Home({ }) {
       {/* <FeaturedListing data={data} /> */}
       <WhyChooseUs />
       {/* <PropertyListing data={data} /> */}
+      <Portfolio />
       <Testimonial />
     </Layout>
   );

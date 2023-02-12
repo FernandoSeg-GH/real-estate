@@ -2,8 +2,6 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
-  FaTwitter,
-  FaWhatsapp,
 } from "react-icons/fa";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { GoLocation } from "react-icons/go";
@@ -77,6 +75,7 @@ const Footer = () => {
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <div className="footer__logo">
               <h1>CanVai S.L.</h1>
+              <img src='/favicon.ico' width='50' height='50' style={{borderRadius:'0.5rem'}}></img>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
@@ -106,7 +105,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <a
-                    href="https://www.facebook.com"
+                    href="https://www.facebook.com/canvaisl/"
                     aria-label="Facebook"
                     className="icon"
                   >

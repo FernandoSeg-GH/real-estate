@@ -29,7 +29,7 @@ const Testimonial = () => {
                     <div className="user__image">
                       <img
                         className="img-fluid"
-                        src="images/pp.jpg"
+                        src="images/pp.webp"
                         alt="user 01"
                       />
                     </div>
@@ -37,7 +37,7 @@ const Testimonial = () => {
                     <p className="user__title">Inmobiliario <em>AICAT 11939</em></p>
                   </div>
                   <p className="user__description">
-                    description
+                    Magíster en Administración de Empresas (ADE). Título de Agente Inmobiliaria, licenciada AICAT n*11.939.
                   </p>
                 </div>
               </SwiperSlide>
@@ -47,7 +47,7 @@ const Testimonial = () => {
                     <div className="user__image">
                       <img
                         className="img-fluid"
-                        src="images/mp.jpg"
+                        src="images/mp.webp"
                         alt="user 02"
                       />
                     </div>
@@ -55,25 +55,7 @@ const Testimonial = () => {
                     <p className="user__title">Arquitecto</p>
                   </div>
                   <p className="user__description">
-                    description
-                  </p>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="testimonial__item">
-                  <div className="user">
-                    <div className="user__image">
-                      <img
-                        className="img-fluid"
-                        src="images/mp.jpg"
-                        alt="user 02"
-                      />
-                    </div>
-                    <h3 className="user__name">Empleado</h3>
-                    <p className="user__title">Ocupación</p>
-                  </div>
-                  <p className="user__description">
-                    description
+                    Magíster en Economía Urbana. Posgrado en Real Estate, MBA para Directivos de PyMES.
                   </p>
                 </div>
               </SwiperSlide>
