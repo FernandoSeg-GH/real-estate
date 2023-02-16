@@ -6,7 +6,7 @@ import { CONTACTFROM } from "../config";
 const Contact = () => {
   return (
     <Layout>
-      <InnerPageLayout title="¿Necesitas ayuda?" />
+      <InnerPageLayout title="Contáctanos" />
       <div className="contact">
         <div className="section-padding">
           <div className="container">
