@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Navbar } from "react-bootstrap";
 import { MdOutlineMailOutline, MdCall } from "react-icons/md";
 
@@ -7,8 +8,11 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <Navbar className="p-0" bg="none" expand="lg">
+              <Link href="/" className="mb-2 p-2">
+                <Image src='/favicon.ico' width='100' height='100' style={{borderRadius:'0.5rem'}} />
+              </Link>
           <Link className="navbar-brand" href="/">
-            <h2 className="logo">CanVai</h2>
+            <h2 className="logo" style={{fontSize:'2rem'}}>CanVai</h2>
           </Link>
           <Navbar.Toggle
             className="navbar-toggler collapsed"
@@ -36,7 +40,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/all-property">
+                <Link className="nav-link" href="/reformas">
                   Reformas
                 </Link>
               </li>
@@ -48,18 +52,6 @@ const Header = () => {
               <li className="nav-item">
                 <Link className="nav-link" href="/contact">
                   Contacto
-                </Link>
-              </li>
-            </ul>
-            <ul className="navbar-nav navbar__right d-block d-lg-none">
-              <li className="nav-item">
-                <Link className="nav-link" href="mailto:admin@gmail.com">
-                  <MdOutlineMailOutline /> info@gmail.com
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="tel:0123456789">
-                  <MdCall /> 0123456789
                 </Link>
               </li>
             </ul>

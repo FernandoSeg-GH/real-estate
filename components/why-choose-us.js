@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div className="wChoose__intro" style={{textAlign:'justify'}}>
+            <div className="wChoose__intro" style={{textAlign:'justify',marginTop:'4rem'}}>
               <SectionTitle title="Servicios" position="left" />
               <p className="fs-5">¿Qué te ofrecemos?</p>
               <p>
