@@ -33,13 +33,13 @@ const Hero = () => {
             <h4 className="mb-5 fs-5">
               Te asesoramos a lo largo de todo el proceso de tasación, alquiler o venta para que obtengas los mayores beneficios.
             </h4>
-            <img src='/images/aicat.png' width='350' height='150' className='mt-5' style={{border:'0.5rem solid white',borderRadius:'0.5rem'}}></img>
           </div>
           <div className="col-lg-6">
             <div className="hero__image">
-              <img src="images/cv1.webp" alt="hero" />
-              <div className="image-two">
-                <img src="images/atr.webp" alt="hero" />
+              <img src="images/cv1.webp" alt="hero1" />
+              <div className="image-two" style={{display:'flex',flexWrap:'wrap',gap:'1rem',marginBottom:'2rem'}}>
+                <img src="images/atr.webp" alt="hero2" />
+                <img src="images/aicat.webp" alt="hero3" />
               </div>
             </div>
           </div>
