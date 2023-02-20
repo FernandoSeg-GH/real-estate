@@ -107,6 +107,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://www.facebook.com/canvaisl/"
+                    target="_blank"
                     aria-label="Facebook"
                     className="icon"
                   >
@@ -116,6 +117,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://www.instagram.com/canvaisl/"
+                    target="_blank"
                     aria-label="Instagram"
                     className="icon"
                   >
@@ -125,6 +127,7 @@ const Footer = () => {
                 <li>
                   <a
                     aria-label="LinkedIn"
+                    target="_blank"
                     href="https://www.linkedin.com/company/can-vai-sl/"
                     className="icon"
                   >
