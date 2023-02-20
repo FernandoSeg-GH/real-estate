@@ -36,10 +36,9 @@ const Hero = () => {
           </div>
           <div className="col-lg-6">
             <div className="hero__image">
-              <img src="images/cv1.webp" alt="hero1" />
-              <div className="image-two" style={{display:'flex',flexWrap:'wrap',gap:'1rem',marginBottom:'2rem'}}>
-                <img src="images/atr.webp" alt="hero2" />
-                <img src="images/aicat.webp" alt="hero3" />
+              <img src="images/hero.webp" alt="hero1" />
+              <div className="image-two">
+                <img src="images/hero2.webp" alt="hero2" />
               </div>
             </div>
           </div>
