@@ -7,50 +7,112 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { GoLocation } from "react-icons/go";
 import { MAILCHAIMP } from "../../config";
 
-//SUBSCRIBE FORM
-function SubscribeForm({ status, message, onValidated }) {
-  let email;
-  const submit = (e) => {
-    e.preventDefault();
-    onValidated({
-      EMAIL: email.value,
-    });
-  };
-
+const HubspotForm = () => {
   return (
-    <form>
-      <div className="footer__subscribe">
-        <input
-          ref={(node) => (email = node)}
-          type="email"
-          required
-          placeholder="Correo electrónico"
-        />
-        <button className="button-primary" type="submit" onClick={submit}>
-          Suscribirse
-        </button>
-      </div>
+    <div>
+      <script
+        type="text/javascript"
+        id="hs-script-loader"
+        async
+        defer
+        src="//js.hsforms.net/forms/embed/v2.js"
+      ></script>
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+          hbspt.forms.create({
+            region: "na1",
+            portalId: "23634215",
+            formId: "ed507b14-41b6-4b6e-b172-4ad7b096b4bd",
+            target: "#hubspotForm",
+            onFormSubmit: function($form) {
+              console.log("Form submitted");
+            }
+          });
+        `,
+        }}
+      />
+      <div id="hubspotForm"></div>
+      <style>{`
+        .hs-form-field {
+          display: flex;
+          flex-direction: column;
+          max-width: 700px;
+          margin: 0 auto;
+          background: yellow;
+        }
+        .hs-input {
+          display: flex;
+          flex-direction: column;
+          max-width: 700px;
+          margin: 0 auto;
+          background: yellow!important;
+        }
+        .hs-form-field label {
+          font-size: 14px;
+          font-weight: 500;
+          color: #000;
 
-      <div className="message col m-10px-t">
-        {status === "sending" && (
-          <div className=" alert alert-warning">sending...</div>
-        )}
-        {status === "error" && (
-          <div
-            className="alert alert-danger"
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-      </div>
-      {status === "success" && (
-        <div
-          className="alert alert-success"
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-    </form>
+        }
+        .hs-form-field input {
+          border: 1px solid #000;
+          border-radius: 5px;
+          padding: 10px;
+          margin-top: 5px;
+        }
+        .hs-form-field input:focus {
+          outline: none;
+        }
+      `}</style>
+    </div>
   );
-}
+};
+
+//SUBSCRIBE FORM
+// function SubscribeForm({ status, message, onValidated }) {
+//   let email;
+//   const submit = (e) => {
+//     e.preventDefault();
+//     onValidated({
+//       EMAIL: email.value,
+//     });
+//   };
+
+//   return (
+//     <form>
+//       <div className="footer__subscribe">
+//         <input
+//           ref={(node) => (email = node)}
+//           type="email"
+//           required
+//           placeholder="Correo electrónico"
+//         />
+//         <button className="button-primary" type="submit" onClick={submit}>
+//           Suscribirse
+//         </button>
+//       </div>
+
+//       <div className="message col m-10px-t">
+//         {status === "sending" && (
+//           <div className=" alert alert-warning">sending...</div>
+//         )}
+//         {status === "error" && (
+//           <div
+//             className="alert alert-danger"
+//             dangerouslySetInnerHTML={{ __html: message }}
+//           />
+//         )}
+//       </div>
+//       {status === "success" && (
+//         <div
+//           className="alert alert-success"
+//           dangerouslySetInnerHTML={{ __html: message }}
+//         />
+//       )}
+//     </form>
+//   );
+// }
 
 const Footer = () => {
   return (
@@ -58,8 +120,9 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="footer__top mx-auto">
-            <h3>Unirse al Newsletter</h3>
-            <MailchimpSubscribe
+            <h3>Más de 15 años en el sector inmobiliario</h3>
+            <p>Contáctenos para cotizar su inmueble o para conocer oportunidades en el mercado.</p>
+            {/* <MailchimpSubscribe
               url={MAILCHAIMP}
               render={({ subscribe, status, message }) => (
                 <SubscribeForm
@@ -68,7 +131,8 @@ const Footer = () => {
                   onValidated={(formData) => subscribe(formData)}
                 />
               )}
-            />
+            /> */}
+            <HubspotForm />
           </div>
         </div>
         <div className="row footer-padding">
