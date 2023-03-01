@@ -8,7 +8,12 @@ const HubspotForm = () => {
     });
 
     return (
-        <div id="hubspot-form-wrapper" />
+        <div>
+            <div id="hubspot-form-wrapper" />
+            <style>{`
+                .hs-form label {color: #ffffff !important;}
+            `}</style>
+        </div>
     )
 }
 
