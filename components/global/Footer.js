@@ -13,51 +13,80 @@ const HubspotForm = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//js-eu1.hsforms.net/forms/shell.js";
-    script.async = true;
-    script.onload = () => setLoading(false);
-    document.body.appendChild(script);
+    const scriptLoader = document.createElement('script');
+    scriptLoader.src = '//js.hsforms.net/forms/v2.js';
+    scriptLoader.async = true;
+    scriptLoader.defer = true;
+  
+    const scriptCreator = document.createElement('script');
+    scriptCreator.innerHTML = `
+      hbspt.forms.create({
+        portalId: '27004540',
+        formId: 'YOUR_FORM_ID',
+        target: 'd3eebe7c-97a6-48ca-9c26-5a68604f291f'
+      });
+    `;
+  
+    document.body.appendChild(scriptLoader);
+    document.body.appendChild(scriptCreator);
   }, []);
 
   return (
     <div>
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        <div>
-          <script
-            charset="utf-8"
-            type="text/javascript"
-            id="hs-script-loader"
-            async
-            defer
-            src="//js-eu1.hsforms.net/forms/embed/v2.js"
-          ></script>
-          <script
-            type="text/javascript"
-            dangerouslySetInnerHTML={{
-              __html: `
-              hbspt.forms.create({
-                region: "eu1",
-                portalId: "27004540",
-                formId: "d3eebe7c-97a6-48ca-9c26-5a68604f291f",
-                target: "#hubspotForm",
-                onFormSubmit: function($form) {
-                  console.log("Form submitted");
-                }
-              });
-            `,
-            }}
-          />
-          <div id="hubspotForm"></div>
-
-          <style>{``}</style>
-        </div>
-      )}
+      <div id="hubspotForm"></div>
     </div>
   );
 };
+
+// const HubspotForm = () => {
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     const script = document.createElement("script");
+//     script.src = "//js-eu1.hsforms.net/forms/shell.js";
+//     script.async = true;
+//     script.onload = () => setLoading(false);
+//     document.body.appendChild(script);
+//   }, []);
+
+//   return (
+//     <div>
+//       {loading ? (
+//         <div>Loading...</div>
+//       ) : (
+//         <div>
+//           <script
+//             charset="utf-8"
+//             type="text/javascript"
+//             id="hs-script-loader"
+//             async
+//             defer
+//             src="//js-eu1.hsforms.net/forms/embed/v2.js"
+//           ></script>
+//           <script
+//             type="text/javascript"
+//             dangerouslySetInnerHTML={{
+//               __html: `
+//               hbspt.forms.create({
+//                 region: "eu1",
+//                 portalId: "27004540",
+//                 formId: "d3eebe7c-97a6-48ca-9c26-5a68604f291f",
+//                 target: "#hubspotForm",
+//                 onFormSubmit: function($form) {
+//                   console.log("Form submitted");
+//                 }
+//               });
+//             `,
+//             }}
+//           />
+//           <div id="hubspotForm"></div>
+
+//           <style>{``}</style>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
 
 
 const Footer = () => {
