@@ -6,6 +6,7 @@ import FeaturedListing from "../components/featured-listing";
 import PropertyListing from "../components/property-listing";
 import Testimonial from "../components/testimonial";
 import { API_URL } from "../config";
+import Hubspot from "./hubspot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function Home({ }) {
       {/* <FeaturedListing data={data} /> */}
       {/* <PropertyListing data={data} /> */}
       <Testimonial />
+      <Hubspot />
     </Layout>
   );
 }
