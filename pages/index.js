@@ -77,7 +77,7 @@ export default function Home({ }) {
       {/* <PropertyListing data={data} /> */}
       <Testimonial />
       <Hubspot />
-      <HubspotFor /> 
+      <HubspotForm /> 
       <p>Test</p>
     </Layout>
   );
