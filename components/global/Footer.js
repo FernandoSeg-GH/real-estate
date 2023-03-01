@@ -6,6 +6,7 @@ import {
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { GoLocation } from "react-icons/go";
 import { MAILCHAIMP } from "../../config";
+import { useEffect, useState } from "react";
 
 
 const HubspotForm = () => {
