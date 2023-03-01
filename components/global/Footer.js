@@ -7,83 +7,57 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { GoLocation } from "react-icons/go";
 import { MAILCHAIMP } from "../../config";
 
+
 const HubspotForm = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//js-eu1.hsforms.net/forms/shell.js";
+    script.async = true;
+    script.onload = () => setLoading(false);
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div>
-      <script
-        charset="utf-8"
-        type="text/javascript"
-        id="hs-script-loader"
-        async
-        defer
-        src="//js-eu1.hsforms.net/forms/embed/v2.js"
-      ></script>
-      <script
-        type="text/javascript"
-        dangerouslySetInnerHTML={{
-          __html: `
-          hbspt.forms.create({
-            region: "eu1",
-            portalId: "27004540",
-            formId: "d3eebe7c-97a6-48ca-9c26-5a68604f291f",
-            target: "#hubspotForm",
-            onFormSubmit: function($form) {
-              console.log("Form submitted");
-            }
-          });
-        `,
-        }}
-      />
-      <div id="hubspotForm"></div>
-      <style>{``}</style>
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <div>
+          <script
+            charset="utf-8"
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js-eu1.hsforms.net/forms/embed/v2.js"
+          ></script>
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+              hbspt.forms.create({
+                region: "eu1",
+                portalId: "27004540",
+                formId: "d3eebe7c-97a6-48ca-9c26-5a68604f291f",
+                target: "#hubspotForm",
+                onFormSubmit: function($form) {
+                  console.log("Form submitted");
+                }
+              });
+            `,
+            }}
+          />
+          <div id="hubspotForm"></div>
+
+          <style>{``}</style>
+        </div>
+      )}
     </div>
   );
 };
 
-//SUBSCRIBE FORM
-// function SubscribeForm({ status, message, onValidated }) {
-//   let email;
-//   const submit = (e) => {
-//     e.preventDefault();
-//     onValidated({
-//       EMAIL: email.value,
-//     });
-//   };
-
-//   return (
-//     <form>
-//       <div className="footer__subscribe">
-//         <input
-//           ref={(node) => (email = node)}
-//           type="email"
-//           required
-//           placeholder="Correo electrónico"
-//         />
-//         <button className="button-primary" type="submit" onClick={submit}>
-//           Suscribirse
-//         </button>
-//       </div>
-
-//       <div className="message col m-10px-t">
-//         {status === "sending" && (
-//           <div className=" alert alert-warning">sending...</div>
-//         )}
-//         {status === "error" && (
-//           <div
-//             className="alert alert-danger"
-//             dangerouslySetInnerHTML={{ __html: message }}
-//           />
-//         )}
-//       </div>
-//       {status === "success" && (
-//         <div
-//           className="alert alert-success"
-//           dangerouslySetInnerHTML={{ __html: message }}
-//         />
-//       )}
-//     </form>
-//   );
-// }
 
 const Footer = () => {
   return (
@@ -186,3 +160,48 @@ const Footer = () => {
 }
 
 export default Footer
+
+//SUBSCRIBE FORM
+// function SubscribeForm({ status, message, onValidated }) {
+//   let email;
+//   const submit = (e) => {
+//     e.preventDefault();
+//     onValidated({
+//       EMAIL: email.value,
+//     });
+//   };
+
+//   return (
+//     <form>
+//       <div className="footer__subscribe">
+//         <input
+//           ref={(node) => (email = node)}
+//           type="email"
+//           required
+//           placeholder="Correo electrónico"
+//         />
+//         <button className="button-primary" type="submit" onClick={submit}>
+//           Suscribirse
+//         </button>
+//       </div>
+
+//       <div className="message col m-10px-t">
+//         {status === "sending" && (
+//           <div className=" alert alert-warning">sending...</div>
+//         )}
+//         {status === "error" && (
+//           <div
+//             className="alert alert-danger"
+//             dangerouslySetInnerHTML={{ __html: message }}
+//           />
+//         )}
+//       </div>
+//       {status === "success" && (
+//         <div
+//           className="alert alert-success"
+//           dangerouslySetInnerHTML={{ __html: message }}
+//         />
+//       )}
+//     </form>
+//   );
+// }
