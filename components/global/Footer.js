@@ -101,6 +101,7 @@ const Footer = () => {
             margin: 0 auto;
             padding: 0 1rem;
             margin-top: 5rem;
+            margin-bottom: 3rem;
 
           }
           .customBlock {
