@@ -22,15 +22,16 @@ const HubspotForm = () => {
             id="hs-script-loader"
             async
             defer
-            src="//js.hsforms.net/forms/v2.js"
+            src="//js-eu1.hsforms.net/forms/embed/v2.js"
           ></script>
           <script
             type="text/javascript"
+            region="eu1"
             dangerouslySetInnerHTML={{
               __html: `
               hbspt.forms.create({
-                portalId: "YOUR_PORTAL_ID",
-                formId: "YOUR_FORM_ID",
+                portalId: "27004540",
+                formId: "d3eebe7c-97a6-48ca-9c26-5a68604f291f",
                 onFormSubmit: function($form) {
                   console.log("Form submitted");
                 }
@@ -44,5 +45,6 @@ const HubspotForm = () => {
     </div>
   );
 };
+
 
 export default HubspotForm;
