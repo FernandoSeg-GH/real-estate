@@ -28,8 +28,8 @@ const Footer = () => {
               )}
             /> */}
           </div>
-        </div>
           <HubspotForm />
+        </div>
         <div className="row footer-padding">
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <div className="footer__logo">
