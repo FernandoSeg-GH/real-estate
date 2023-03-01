@@ -6,8 +6,53 @@ import {
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { GoLocation } from "react-icons/go";
 import { MAILCHAIMP } from "../../config";
-import HubspotForm from "../HubspotForm";
+import { useState, useEffect } from "react";
 
+const HubspotForm = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//js.hsforms.net/forms/shell.js";
+    script.async = true;
+    script.onload = () => setLoading(false);
+    document.body.appendChild(script);
+  }, []);
+
+  return (
+    <div>
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <div>
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js-eu1.hsforms.net/forms/embed/v2.js"
+          ></script>
+          <script
+            type="text/javascript"
+            region="eu1"
+            dangerouslySetInnerHTML={{
+              __html: `
+              hbspt.forms.create({
+                portalId: "27004540",
+                formId: "d3eebe7c-97a6-48ca-9c26-5a68604f291f",
+                onFormSubmit: function($form) {
+                  console.log("Form submitted");
+                }
+              });
+            `,
+            }}
+          />
+          <div id="hubspotForm"></div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Footer = () => {
   return (
