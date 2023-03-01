@@ -9,12 +9,10 @@ import HubspotForm from "../HubspotForm";
 const Footer = () => {
   return (
     <>
-      <div className="row">
-        <div className="footer__top mx-auto">
+      <div className="hubspotFormWrapper">
           <h3>Más de 15 años en el sector inmobiliario</h3>
-          <p className="text-white">Contáctenos para cotizar su inmueble o para conocer oportunidades en el mercado.</p>
-        </div>
-        <div className="hubspotFormWrapper">
+          <p className="">Contáctenos para cotizar su inmueble o para conocer oportunidades en el mercado.</p>
+        <div className="">
           <HubspotForm  />
           <div className="customBlock"/>
         </div>
@@ -101,7 +99,9 @@ const Footer = () => {
             position: relative;
             max-width: 600px;
             margin: 0 auto;
-            
+            padding: 0 1rem;
+            margin-top: 5rem;
+
           }
           .customBlock {
             height: 60px;
@@ -111,6 +111,12 @@ const Footer = () => {
             left: 0;
             background: #fff;
             z-index: 1;
+          }
+
+          @media (max-width: 356px) {
+            .customBlock {
+              height: 80px;
+            }
           }
         `}</style>
       </div>
