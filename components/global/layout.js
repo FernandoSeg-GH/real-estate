@@ -16,7 +16,7 @@ export default function Layout({ title, keywords, description, children }) {
       <>{children}</>
       <Footer />
     </>
-  );
+  )
 }
 
 Layout.defaultProps = {

@@ -35,37 +35,7 @@ const HubspotForm = () => {
         }}
       />
       <div id="hubspotForm"></div>
-      <style>{`
-        .hs-form-field {
-          display: flex;
-          flex-direction: column;
-          max-width: 700px;
-          margin: 0 auto;
-          background: yellow;
-        }
-        .hs-input {
-          display: flex;
-          flex-direction: column;
-          max-width: 700px;
-          margin: 0 auto;
-          background: yellow!important;
-        }
-        .hs-form-field label {
-          font-size: 14px;
-          font-weight: 500;
-          color: #000;
-
-        }
-        .hs-form-field input {
-          border: 1px solid #000;
-          border-radius: 5px;
-          padding: 10px;
-          margin-top: 5px;
-        }
-        .hs-form-field input:focus {
-          outline: none;
-        }
-      `}</style>
+      <style>{``}</style>
     </div>
   );
 };
@@ -212,7 +182,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
