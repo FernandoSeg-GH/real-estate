@@ -11,20 +11,21 @@ const HubspotForm = () => {
   return (
     <div>
       <script
+        charset="utf-8"
         type="text/javascript"
         id="hs-script-loader"
         async
         defer
-        src="//js.hsforms.net/forms/embed/v2.js"
+        src="//js-eu1.hsforms.net/forms/embed/v2.js"
       ></script>
       <script
         type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
           hbspt.forms.create({
-            region: "na1",
-            portalId: "23634215",
-            formId: "ed507b14-41b6-4b6e-b172-4ad7b096b4bd",
+            region: "eu1",
+            portalId: "27004540",
+            formId: "d3eebe7c-97a6-48ca-9c26-5a68604f291f",
             target: "#hubspotForm",
             onFormSubmit: function($form) {
               console.log("Form submitted");
