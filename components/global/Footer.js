@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <div className="row">
-        <div className="footer__top mx-auto customText">
+        <div className="footer__top mx-auto">
           <h3>Más de 15 años en el sector inmobiliario</h3>
           <p className="text-white">Contáctenos para cotizar su inmueble o para conocer oportunidades en el mercado.</p>
         </div>
@@ -101,6 +101,7 @@ const Footer = () => {
             position: relative;
             max-width: 600px;
             margin: 0 auto;
+            
           }
           .customBlock {
             height: 60px;
