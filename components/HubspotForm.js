@@ -18,7 +18,6 @@ const HubspotForm = () => {
       ) : (
         <div>
           <script
-            charSet="utf-8"
             type="text/javascript"
             id="hs-script-loader"
             async
@@ -45,3 +44,5 @@ const HubspotForm = () => {
     </div>
   );
 };
+
+export default HubspotForm;
