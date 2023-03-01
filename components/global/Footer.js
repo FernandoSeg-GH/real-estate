@@ -3,9 +3,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { GoLocation } from "react-icons/go";
-import { MAILCHAIMP } from "../../config";
 import HubspotForm from "../HubspotForm";
 
 const Footer = () => {
@@ -13,7 +11,7 @@ const Footer = () => {
     <div className="footer footer-padding-t">
       <div className="container">
         <div className="row">
-          <div className="footer__top mx-auto">
+          <div className="footer__top mx-auto customText">
             <h3>Más de 15 años en el sector inmobiliario</h3>
             <p className="text-white">Contáctenos para cotizar su inmueble o para conocer oportunidades en el mercado.</p>
             {/* <MailchimpSubscribe
@@ -104,53 +102,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <style>{`
+        .customText {
+          color: white;
+        }
+      `}</style>
     </div>
   )
 }
 
 export default Footer
-
-//SUBSCRIBE FORM
-// function SubscribeForm({ status, message, onValidated }) {
-//   let email;
-//   const submit = (e) => {
-//     e.preventDefault();
-//     onValidated({
-//       EMAIL: email.value,
-//     });
-//   };
-
-//   return (
-//     <form>
-//       <div className="footer__subscribe">
-//         <input
-//           ref={(node) => (email = node)}
-//           type="email"
-//           required
-//           placeholder="Correo electrónico"
-//         />
-//         <button className="button-primary" type="submit" onClick={submit}>
-//           Suscribirse
-//         </button>
-//       </div>
-
-//       <div className="message col m-10px-t">
-//         {status === "sending" && (
-//           <div className=" alert alert-warning">sending...</div>
-//         )}
-//         {status === "error" && (
-//           <div
-//             className="alert alert-danger"
-//             dangerouslySetInnerHTML={{ __html: message }}
-//           />
-//         )}
-//       </div>
-//       {status === "success" && (
-//         <div
-//           className="alert alert-success"
-//           dangerouslySetInnerHTML={{ __html: message }}
-//         />
-//       )}
-//     </form>
-//   );
-// }
