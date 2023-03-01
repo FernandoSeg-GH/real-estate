@@ -99,6 +99,8 @@ const Footer = () => {
         <style>{`
           .hubspotFormWrapper {
             position: relative;
+            max-width: 600px;
+            margin: 0 auto;
           }
           .customBlock {
             height: 60px;
