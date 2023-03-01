@@ -9,44 +9,32 @@ import { MAILCHAIMP } from "../../config";
 import { useState, useEffect } from "react";
 
 const HubspotForm = () => {
-  const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//js.hsforms.net/forms/shell.js";
-    script.async = true;
-    script.onload = () => setLoading(false);
-    document.body.appendChild(script);
+      const script = document.createElement('script');
+      script.src='https://js.hsforms.net/forms/v2.js';
+      document.body.appendChild(script);
+
+      script.addEventListener('load', () => {
+          // @TS-ignore
+          if (window.hbspt) {
+              // @TS-ignore
+              window.hbspt.forms.create({
+                  portalId: '27004540',
+                  formId: 'YOUR_FORM_ID_HERE',
+                  target: 'd3eebe7c-97a6-48ca-9c26-5a68604f291f'
+              })
+          }
+      });
   }, []);
 
   return (
-    <div>
-      <script
-        type="text/javascript"
-        id="hs-script-loader"
-        async
-        defer
-        src="//js-eu1.hsforms.net/forms/embed/v2.js"
-      ></script>
-      <script
-        type="text/javascript"
-        region="eu1"
-        dangerouslySetInnerHTML={{
-          __html: `
-          hbspt.forms.create({
-            portalId: "27004540",
-            formId: "d3eebe7c-97a6-48ca-9c26-5a68604f291f",
-            onFormSubmit: function($form) {
-              console.log("Form submitted");
-            }
-          });
-        `,
-        }}
-      />
-      <div id="hubspotForm"></div>
-    </div>
+      <div>
+          <div id="hubspotForm"></div>
+      </div>
   );
-};
+
+}
 
 const Footer = () => {
   return (
