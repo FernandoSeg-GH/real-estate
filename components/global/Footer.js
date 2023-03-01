@@ -122,7 +122,7 @@ const Footer = () => {
         <div className="row">
           <div className="footer__top mx-auto">
             <h3>Más de 15 años en el sector inmobiliario</h3>
-            <p>Contáctenos para cotizar su inmueble o para conocer oportunidades en el mercado.</p>
+            <p className="text-white">Contáctenos para cotizar su inmueble o para conocer oportunidades en el mercado.</p>
             {/* <MailchimpSubscribe
               url={MAILCHAIMP}
               render={({ subscribe, status, message }) => (
