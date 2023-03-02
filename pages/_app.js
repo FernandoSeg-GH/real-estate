@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
   return <>
     <SSRProvider>
       <HubspotProvider portalId="27004540">
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
         <Hubspot />
       </HubspotProvider>
     </SSRProvider>
