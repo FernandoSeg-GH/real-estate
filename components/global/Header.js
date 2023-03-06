@@ -49,11 +49,6 @@ const Header = () => {
                   Inmuebles
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/contact">
-                  Contacto
-                </Link>
-              </li>
             </ul>
           </Navbar.Collapse>
 

@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <>
       <div className="hubspotFormWrapper">
-          <h3>Más de 15 años en el sector inmobiliario</h3>
-          <p className="">Contáctenos para cotizar su inmueble o para conocer oportunidades en el mercado.</p>
+          <h3>Contáctanos</h3>
+          <p className="">Cotiza tu inmueble o conoce nuevas oportunidades de mercado.</p>
         <div className="">
           <HubspotForm  />
           <div className="customBlock"/>
