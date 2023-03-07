@@ -6,62 +6,57 @@
       xmlns:xhtml="http://www.w3.org/1999/xhtml">
       
 	<url>
-		<loc>https://can-vai.com//all-property</loc>
+		<loc>https://can-vai.com/all-property</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//api/hello</loc>
+		<loc>https://can-vai.com/api/hello</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//blog/[slug]</loc>
+		<loc>https://can-vai.com/blog/[slug]</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//blogs</loc>
+		<loc>https://can-vai.com/blogs</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//hubspot</loc>
+		<loc>https://can-vai.com/inmuebles</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//inmuebles</loc>
+		<loc>https://can-vai.com/property/[slug]</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//property/[slug]</loc>
+		<loc>https://can-vai.com/reformas</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//reformas</loc>
+		<loc>https://can-vai.com/search-rent</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//search-rent</loc>
+		<loc>https://can-vai.com/search-sale</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//search-sale</loc>
+		<loc>https://can-vai.com/sitemap</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 
 	<url>
-		<loc>https://can-vai.com//sitemap</loc>
-		<lastmod>2023-03-07</lastmod>
-	</url>
-
-	<url>
-		<loc>https://can-vai.com//</loc>
+		<loc>https://can-vai.com/</loc>
 		<lastmod>2023-03-07</lastmod>
 	</url>
 </urlset>
