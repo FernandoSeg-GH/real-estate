@@ -2,7 +2,7 @@ import { Router } from "next/router";
 import { SSRProvider } from "react-bootstrap";
 import 'react-loading-skeleton/dist/skeleton.css'
 import "../assets/sass/main.scss";
-import Hubspot from './hubspot';
+import Hubspot from '../components/global/hubspot';
 import { HubspotProvider } from 'next-hubspot';
 
 export default function App({ Component, pageProps }) {

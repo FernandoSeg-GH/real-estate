@@ -6,7 +6,7 @@ import FeaturedListing from "../components/featured-listing";
 import PropertyListing from "../components/property-listing";
 import Testimonial from "../components/testimonial";
 import { API_URL } from "../config";
-import Hubspot from "./hubspot";
+import Hubspot from "../components/global/hubspot";
 import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
