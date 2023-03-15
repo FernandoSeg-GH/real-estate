@@ -12,7 +12,7 @@ const Header = () => {
                 <Image src='/favicon.ico' width='100' height='100' style={{borderRadius:'0.5rem'}} />
               </Link>
           <Link className="navbar-brand" href="/">
-            <h2 className="logo" style={{fontSize:'2rem'}}>CanVai</h2>
+            <h2 className="logo text-white fs-2">CanVai</h2>
           </Link>
           <Navbar.Toggle
             className="navbar-toggler collapsed"
