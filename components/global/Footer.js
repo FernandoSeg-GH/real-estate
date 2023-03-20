@@ -89,7 +89,7 @@ const Footer = () => {
           <div className="footer__copyright m-20px-t m-20px-b">
             <div className="row">
               <div className="col-12">
-                <p className="m-0 text-center">&copy; 2023 All right reserved.</p>
+                <p className="m-0 text-center">&copy; 2023 All rights reserved.</p>
               </div>
             </div>
           </div>
