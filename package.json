@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sitemap-generator": "next-sitemap"
+    "sitemap-generator": "next-sitemap --config ./sitemap-config.js --outfile ./public/sitemap.xml"
   },
   "dependencies": {
     "@next/font": "13.1.1",

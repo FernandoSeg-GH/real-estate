@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.can-vai.com
+Host: https://can-vai.com,https://www.can-vai.com,http://localhost:3000
 
 # Sitemaps
-Sitemap: https://www.can-vai.com/sitemap.xml
+Sitemap: https://can-vai.com,https://www.can-vai.com,http://localhost:3000/sitemap.xml
