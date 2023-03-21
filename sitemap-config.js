@@ -1,5 +1,4 @@
 module.exports = {
-    siteUrl: 'https://www.can-vai.com',
-    generateRobotsTxt: true,
-  }
-  
+  siteUrl: ['https://can-vai.com', 'http://localhost:3000'],
+  generateRobotsTxt: true,
+};
