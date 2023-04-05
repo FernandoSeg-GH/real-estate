@@ -63,26 +63,6 @@ const Portfolio2 = () => {
                     <img src="/images/portfolio2/pf06.webp" alt='pf06' style={{borderRadius:'0.2rem'}}></img>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="testimonial__pf">
-                    <img src="/images/portfolio2/pf07.webp" alt='pf07' style={{borderRadius:'0.2rem'}}></img>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="testimonial__pf">
-                    <img src="/images/portfolio2/pf08.webp" alt='pf08' style={{borderRadius:'0.2rem'}}></img>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="testimonial__pf">
-                    <img src="/images/portfolio2/pf09.webp" alt='pf09' style={{borderRadius:'0.2rem'}}></img>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="testimonial__pf">
-                    <img src="/images/portfolio2/pf10.webp" alt='pf10' style={{borderRadius:'0.2rem'}}></img>
-                </div>
-              </SwiperSlide>
             </Swiper>
           </div>
         </div>

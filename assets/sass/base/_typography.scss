@@ -1,14 +1,17 @@
-// Heading font
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap');
-// Body font
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* First font */
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/fonts/Unbounded-ExtraLight.ttf') format('truetype');
+}
 
-// Font Family
-$font-heading: "Unbounded", sans-serif;
-$font-display: "Montserrat", sans-serif;
+/* Second font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
 
 body {
-  font-family: $font-display;
+  font-family: 'Montserrat';
   line-height: 1.5;
   color: $color-dark;
 }
@@ -21,7 +24,7 @@ h2,
 h4,
 h5,
 h6 {
-  font-family: $font-heading;
+  font-family: 'Unbounded';
   color: $color-dark;
   font-weight: 700;
 }
@@ -45,5 +48,5 @@ h6 {
 }
 
 .part{
-  font-family: $font-heading;
+  font-family: 'Unbounded';
 }
