@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <div className="wChoose__intro" style={{textAlign:'justify'}}>
-              <SectionTitle title="Servicios" position="left" />
+              <SectionTitle title="Servicios Reformas" position="left" />
               <p className="fs-5">¿Qué te ofrecemos?</p>
               <p>
                 Para ofrecer las mejores condiciones, garantías y transparencia, estamos siendo franquiciados por <strong>AQUÍ TU REFORMA</strong>.

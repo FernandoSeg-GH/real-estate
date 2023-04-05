@@ -3,6 +3,13 @@ import React, { useState } from "react";
 import { Tab, Tabs } from "react-bootstrap";
 import { BsSearch } from "react-icons/bs";
 
+import { Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+import SectionTitle from "./global/section-title";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const Hero = () => {
   const router = useRouter();
   const [key, setKey] = useState("rent");
@@ -21,26 +28,51 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row align-items-center">
-          <div className="col-lg-6 mt-4">
-            <h1 className="display-5">Empecemos tu reforma.</h1>
-            <h3 className="mb-5 fs-5">
-              Contamos con más de 30 años de trayectoria en el rubro de la construcción, arquitectura y reformas.
+          <div className="col-lg-6 px-5 pb-5">
+            <h1 className="display-6">Arquitectura &amp; Inmobiliaria</h1>
+            <h3 className="fs-6" style={{fontWeight:'300',textAlign:'justify'}}>
+              Contamos con más de 30 años de trayectoria en arquitectura, construcción y reformas.
+              Además, tenemos basta experiencia en el rubro inmobiliario, y asesoramos en compras desde el exterior. 
+            Combinamos nuestros conocimientos en arquitecura y real estate para ofrecerte soluciones óptimas en tu inversiones inmobiliarias.
             </h3>
-
-            <h2 className="display-5">Trabajemos tus inmuebles.</h2>
-            <h4 className="mb-5 fs-5">
-              Te asesoramos a lo largo de todo el proceso de tasación, alquiler o venta para que obtengas los mayores beneficios.
-            </h4>
           </div>
-          <div className="col-lg-6">
-            <div className="hero__image">
-              <img src="images/hero.webp" alt="hero1" />
-              <div className="image-two">
-                <img src="images/hero2.webp" alt="hero2" />
-              </div>
-            </div>
+          <div className="col-lg-6 p-0">
+          <Swiper
+              modules={[Autoplay]}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                slidesPerView: 1
+              }}
+            >
+              <SwiperSlide>
+                <div className="testimonial__hr">
+                    <img src="/images/hero/hr1.webp" alt='hr1'></img>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="testimonial__hr">
+                    <img src="/images/hero/hr2.webp" alt='hr2'></img>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="testimonial__hr">
+                    <img src="/images/hero/hr3.webp" alt='hr3'></img>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="testimonial__hr">
+                    <img src="/images/hero/hr4.webp" alt='hr4'></img>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="testimonial__hr">
+                    <img src="/images/hero/hr5.webp" alt='hr5'></img>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>

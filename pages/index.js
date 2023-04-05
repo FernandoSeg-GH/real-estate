@@ -1,15 +1,13 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import Layout from "../components/global/layout";
 import Hero from "../components/hero";
 import FeaturedListing from "../components/featured-listing";
 import PropertyListing from "../components/property-listing";
 import Testimonial from "../components/testimonial";
+import Partners from "../components/partners"
 import { API_URL } from "../config";
 import Hubspot from "../components/global/hubspot";
 import { useEffect, useState } from "react";
-
-const inter = Inter({ subsets: ["latin"] });
 
 // export default function Home({ property }) {
 //   const { data } = property;  
@@ -19,6 +17,7 @@ export default function Home({ }) {
   return (
     <Layout title='CanVai S.L.' >
       <Hero />
+      <Partners />
       {/* <FeaturedListing data={data} /> */}
       {/* <PropertyListing data={data} /> */}
       <Testimonial />
