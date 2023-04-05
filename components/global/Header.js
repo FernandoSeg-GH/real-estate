@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container">
         <Navbar className="p-0" bg="none" expand="lg">
               <Link href="/" className="mb-2 p-2">
-                <Image src='/images/icon.png' width='80' height='80' style={{borderRadius:'0.5rem'}} />
+                <Image src='/images/icon.webp' width='80' height='80' style={{borderRadius:'0.5rem'}} />
               </Link>
           <Link className="navbar-brand" href="/">
             <h2 className="logo text-white fs-2">CanVai</h2>
