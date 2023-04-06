@@ -6,7 +6,7 @@ const Partners = () => {
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 576) {
-                setImgWidth(40);
+                setImgWidth(50);
             } else {
                 setImgWidth(10);
             }
@@ -17,7 +17,7 @@ const Partners = () => {
     }, []);
 
     return (
-        <div id='cont' className='section-padding p-2 d-flex flex-column flex-sm-row justify-content-center align-items-center' style={{ gap: '1rem', backgroundColor: '#9c9c9c', color: 'white' }}>
+        <div id='cont' className='section-padding p-5 d-flex flex-column flex-sm-row justify-content-center align-items-center' style={{ gap: '1rem', backgroundColor: '#9c9c9c', color: 'white' }}>
             <p className='part'>Formamos parte de</p>
             <img
                 src="/images/atr.webp"

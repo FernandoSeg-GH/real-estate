@@ -20,6 +20,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer footer-padding-t">
+            <div className="map" id="ieatmaps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.521384263392!2d2.1968253511289704!3d41.40619937916071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a33be71c8e59%3A0x49f36ffffe315c87!2sAvinguda%20Diagonal%20%26%20C%2F%20de%20Bilbao%2C%2008018%20Barcelona!5e0!3m2!1ses!2ses!4v1680690235430!5m2!1ses!2ses"
+                allowfullscreen=""
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
         <div className="container">
           <div className="row footer-padding">
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
@@ -90,14 +98,6 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="map" id="ieatmaps">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.521384263392!2d2.1968253511289704!3d41.40619937916071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a33be71c8e59%3A0x49f36ffffe315c87!2sAvinguda%20Diagonal%20%26%20C%2F%20de%20Bilbao%2C%2008018%20Barcelona!5e0!3m2!1ses!2ses!4v1680690235430!5m2!1ses!2ses"
-            allowfullscreen=""
-            style={{ border: 0 }}
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
 
         <div className="container">
           <div className="footer__copyright m-20px-t m-20px-b">

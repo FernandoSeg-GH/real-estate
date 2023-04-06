@@ -30,16 +30,16 @@ const Hero = () => {
     <div className="hero">
       <div className="container-fluid">
         <div className="row align-items-center">
-          <div className="col-lg-6 px-5 pb-5">
+          <div className="col-lg-6 px-4 px-lg-5 pb-5">
             <h1 className="display-6">Arquitectura &amp; Inmobiliaria</h1>
-            <h3 className="fs-6" style={{fontWeight:'300',textAlign:'justify'}}>
-              Contamos con más de 30 años de trayectoria en arquitectura, construcción y reformas.
-              Además, tenemos basta experiencia en el rubro inmobiliario, y asesoramos en compras desde el exterior. 
-            Combinamos nuestros conocimientos en arquitecura y real estate para ofrecerte soluciones óptimas en tu inversiones inmobiliarias.
+            <h3 className="fs-6" style={{ fontWeight: '300', textAlign: 'justify' }}>
+              Contamos con +30 años de trayectoria en arquitectura, construcción y reformas.
+              Tenemos vasta experiencia en el rubro inmobiliario y asesoramos compras desde el exterior.
+              Combinamos nuestros conocimientos en arquitecura y Real Estate para ofrecerte soluciones óptimas en tus inversiones inmobiliarias.
             </h3>
           </div>
           <div className="col-lg-6 p-0">
-          <Swiper
+            <Swiper
               modules={[Autoplay]}
               autoplay={{
                 delay: 3000,
@@ -49,27 +49,27 @@ const Hero = () => {
             >
               <SwiperSlide>
                 <div className="testimonial__hr">
-                    <img src="/images/hero/hr1.webp" alt='hr1'></img>
+                  <img src="/images/hero/hr1.webp" alt='hr1'></img>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonial__hr">
-                    <img src="/images/hero/hr2.webp" alt='hr2'></img>
+                  <img src="/images/hero/hr2.webp" alt='hr2'></img>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonial__hr">
-                    <img src="/images/hero/hr3.webp" alt='hr3'></img>
+                  <img src="/images/hero/hr3.webp" alt='hr3'></img>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonial__hr">
-                    <img src="/images/hero/hr4.webp" alt='hr4'></img>
+                  <img src="/images/hero/hr4.webp" alt='hr4'></img>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonial__hr">
-                    <img src="/images/hero/hr5.webp" alt='hr5'></img>
+                  <img src="/images/hero/hr5.webp" alt='hr5'></img>
                 </div>
               </SwiperSlide>
             </Swiper>
