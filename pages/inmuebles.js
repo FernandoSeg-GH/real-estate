@@ -6,7 +6,7 @@ import Portfolio2 from "../components/portfolio2"
 
 function Inmuebles() {
   return (
-    <Layout title='CanVai Inmuebles'>
+    <Layout title='Can Vai Inmuebles'>
         <Inmob />
         <Partners />
         <Portfolio2 />

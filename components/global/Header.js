@@ -12,7 +12,7 @@ const Header = () => {
                 <Image src='/images/icon.webp' width='80' height='80' style={{borderRadius:'0.5rem'}} />
               </Link>
           <Link className="navbar-brand" href="/">
-            <h2 className="logo text-white fs-2">CanVai</h2>
+            <h2 className="logo text-white fs-2">Can Vai</h2>
           </Link>
           <Navbar.Toggle
             className="navbar-toggler collapsed"
@@ -47,6 +47,11 @@ const Header = () => {
               <li className="nav-item">
                 <Link className="nav-link" href="/inmuebles">
                   Inmuebles
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/actualidad">
+                  Actualidad
                 </Link>
               </li>
             </ul>
