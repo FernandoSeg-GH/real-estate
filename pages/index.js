@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 export default function Home({ }) {
 
   return (
-    <Layout title='CanVai S.L.' >
+    <Layout title='Can Vai S.L.' >
       <Hero />
       <Partners />
       {/* <FeaturedListing data={data} /> */}

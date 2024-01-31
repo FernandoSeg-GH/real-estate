@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="row footer-padding">
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="footer__logo">
-                <h1>CanVai S.L.</h1>
+                <h1>Can Vai S.L.</h1>
                 <p style={{ color: 'white' }}>NIF B72506785</p>
                 <img src='/favicon.ico' width='50' height='50' style={{ borderRadius: '0.5rem' }}></img>
               </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="https://www.facebook.com/canvaisl/"
+                      href="https://www.facebook.com/Can Vaisl/"
                       target="_blank"
                       aria-label="Facebook"
                       className="icon"
@@ -74,7 +74,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.instagram.com/canvaisl/"
+                      href="https://www.instagram.com/Can Vaisl/"
                       target="_blank"
                       aria-label="Instagram"
                       className="icon"
@@ -103,7 +103,7 @@ const Footer = () => {
           <div className="footer__copyright m-20px-t m-20px-b">
             <div className="row">
               <div className="col-12">
-                <p className="m-0 text-center">&copy; 2023 All rights reserved.</p>
+                <p className="m-0 text-center">&copy; 2024 All rights reserved.</p>
               </div>
             </div>
           </div>
