@@ -117,6 +117,7 @@ export async function getServerSideProps({ query: { slug } }) {
  */
 
 import { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import Layout from "../../components/global/layout";
 import blogs from "../../public/json/actualidad.json";
 
@@ -130,14 +131,26 @@ const BlogPost = ({ blog }) => {
 
   return (
     <Layout title={`Can Vai Blog | ${title}`}>
-      <div className='container'>
+      <div className='container col-lg-6'>
         <div className='my-4'>
           <h2>{title}</h2>
           <span>{description}</span>
         </div>
-        <img className="img-fluid rounded" src={image} alt={title} />
-        <div className='my-4 py-4'>
-          <p dangerouslySetInnerHTML={{ __html: clientBody }}></p>
+        <img className="img-fluid rounded" src={image} alt={title} style={{ objectFit: 'cover' }} />
+        <div className='my-4 py-2' style={{ whiteSpace: 'pre-line' }}>
+          <ReactMarkdown
+            components={{
+              img: ({ node, ...props }) => (
+                <img
+                  {...props}
+                  className="img-fluid"
+                  style={{ maxWidth: '100%', height: 'auto' }}
+                />
+              ),
+            }}
+          >{clientBody}</ReactMarkdown>
+        </div>
+        <div className='testimonial__item mb-4'>
           <em>Recuerda que esto es una guía para que puedas prever con mayor certeza cuántos impuestos deberás pagar y así evitar sorpresas, pero deberás consultar con un especialista que conozca tu situación particular para reconfirmar los importes.</em>
         </div>
       </div>
@@ -147,7 +160,7 @@ const BlogPost = ({ blog }) => {
 
 export async function getStaticPaths() {
   const paths = blogs.map((blog) => ({
-    params: { slug: blog.title.toLowerCase().replace(/\s+/g, '-').replace(/[¿?]/g, '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')},
+    params: { slug: blog.title.toLowerCase().replace(/\s+/g, '-').replace(/[¿?:]/g, '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')},
   }));
 
   return { paths, fallback: false };
@@ -155,7 +168,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const slug = params.slug.replace(/-/g, ' ');
-  const blog = blogs.find((b) => b.title.toLowerCase().replace(/[¿?]/g, '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '') === slug);
+  const blog = blogs.find((b) => b.title.toLowerCase().replace(/[¿?:]/g, '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '') === slug);
 
   if (!blog) {
     return {

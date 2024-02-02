@@ -47,10 +47,6 @@ body {
   padding: 60px 0;
 }
 
-.footer-padding-t {
-  padding-top: 60px;
-}
-
 // section title
 .section-title {
   text-align: center;
@@ -209,5 +205,27 @@ ul {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+  }
+}
+
+.cardHov {
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+
+  img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: 0.3s ease-in-out;
+    }
+
+    strong, span {
+      color: $color-primary;
+      transition: 0.3s ease-in-out;
+    }
   }
 }
