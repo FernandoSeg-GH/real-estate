@@ -19,27 +19,29 @@ function Actualidad({ blogs }) {
           <div className="row">
             {blog && blogs.map((item, index) => (
               <div className="col-md-6 col-sm-12 mb-4 d-flex align-self-stretch" key={index}>
-                <div className="testimonial__item d-flex flex-column">
+                <div className="testimonial__item cardHov d-flex flex-column">
                   <Link
-                    href={`/actualidad/${item.title.toLowerCase().replace(/\s+/g, '-').replace(/[¿?]/g, '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')}`}
+                    href={`/actualidad/${item.title.toLowerCase().replace(/\s+/g, '-').replace(/[¿?:]/g, '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')}`}
                     className="d-flex flex-column gap-3"
                   >
-                    <div className="card">
+                    <div className="card cardHov">
                       <img
                         className="img-fluid rounded"
                         src={item.image}
                         alt={`user ${index + 1}`}
                       />
                     </div>
-                    <div className='d-flex flex-column gap-1 nav-link'>
+                    <div className='d-flex flex-column gap-1'>
                       <strong className="fs-4">{item.title}</strong>
                       <p className="fs-6">{item.description}</p>
                     </div>
                   </Link>
                   <Link
-                    href={`/actualidad/${item.title.toLowerCase().replace(/\s+/g, '-').replace(/[¿?]/g, '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')}`}
+                    href={`/actualidad/${item.title.toLowerCase().replace(/\s+/g, '-').replace(/[¿?:]/g, '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')}`}
                     className='mt-auto'
-                  > Read More </Link>
+                  > 
+                    <span>Read More</span>
+                  </Link>
                 </div>
               </div>
             ))}

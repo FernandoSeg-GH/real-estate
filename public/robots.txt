@@ -1,9 +1,8 @@
-# *
+# Specify User-agent
 User-agent: *
+
+# Allow crawling of all pages
 Allow: /
 
-# Host
-Host: https://can-vai.com, https://www.can-vai-com, http://www.can-vai-com, http://www.can-vai-com, http://localhost:3000
-
-# Sitemaps
-Sitemap: https://can-vai.com, https://www.can-vai-com, http://www.can-vai-com, http://www.can-vai-com, http://localhost:3000/sitemap.xml
+# Sitemap location
+Sitemap: https://www.can-vai-com/sitemap-1.xml
