@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.can-vai-com/sitemap-1.xml
+Sitemap: https://www.can-vai.com/sitemap-1.xml
