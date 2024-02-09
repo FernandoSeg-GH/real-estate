@@ -2,105 +2,105 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
     <url>
-        <loc>https://www.can-vai.com</loc>
+        <loc>https://can-vai.com</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>yearly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/inmuebles</loc>
+        <loc>https://can-vai.com/inmuebles</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/reformas</loc>
+        <loc>https://can-vai.com/reformas</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad</loc>
+        <loc>https://can-vai.com/actualidad</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/guia-para-vender-tu-piso-en-barcelona</loc>
+        <loc>https://can-vai.com/actualidad/guia-para-vender-tu-piso-en-barcelona</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/que-gastos-tiene-el-vendedor-de-un-inmueble</loc>
+        <loc>https://can-vai.com/actualidad/que-gastos-tiene-el-vendedor-de-un-inmueble</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/entendiendo-los-gastos-del-comprador-una-guia-para-adquirir-propiedades-en-barcelona</loc>
+        <loc>https://can-vai.com/actualidad/entendiendo-los-gastos-del-comprador-una-guia-para-adquirir-propiedades-en-barcelona</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/has-heredado-un-piso-averigua-que-gastos-tendras-al-venderlo</loc>
+        <loc>https://can-vai.com/actualidad/has-heredado-un-piso-averigua-que-gastos-tendras-al-venderlo</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
     
     <url>
-        <loc>https://www.can-vai.com/actualidad/cuanto-pagare-de-i.r.p.f.</loc>
+        <loc>https://can-vai.com/actualidad/cuanto-pagare-de-i.r.p.f.</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/como-calculo-la-plusvalia-municipal-en-barcelona</loc>
+        <loc>https://can-vai.com/actualidad/como-calculo-la-plusvalia-municipal-en-barcelona</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/tamano-ideal-para-banos-claves-para-reformas-exitosas-en-barcelona</loc>
+        <loc>https://can-vai.com/actualidad/tamano-ideal-para-banos-claves-para-reformas-exitosas-en-barcelona</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/diseno-y-reforma-de-banos-claves-para-un-espacio-funcional-y-estetico-en-barcelona</loc>
+        <loc>https://can-vai.com/actualidad/diseno-y-reforma-de-banos-claves-para-un-espacio-funcional-y-estetico-en-barcelona</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/claves-para-una-reforma-exitosa-en-la-cocina</loc>
+        <loc>https://can-vai.com/actualidad/claves-para-una-reforma-exitosa-en-la-cocina</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/actualidad/disenando-cocinas-eficientes-la-magia-del-triangulo-virtuoso</loc>
+        <loc>https://can-vai.com/actualidad/disenando-cocinas-eficientes-la-magia-del-triangulo-virtuoso</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://www.can-vai.com/sitemap-1.xml</loc>
+        <loc>https://can-vai.com/sitemap-1.xml</loc>
         <lastmod>2024-02-02T12:30:45.000Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
