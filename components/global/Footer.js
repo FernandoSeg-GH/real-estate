@@ -64,7 +64,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="https://www.facebook.com/Can Vaisl/"
+                      href="https://www.facebook.com/canvaisl"
                       target="_blank"
                       aria-label="Facebook"
                       className="icon"
@@ -74,7 +74,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.instagram.com/Can Vaisl/"
+                      href="https://www.instagram.com/canvaisl/"
                       target="_blank"
                       aria-label="Instagram"
                       className="icon"
